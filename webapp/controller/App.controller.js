@@ -19,22 +19,22 @@ sap.ui.define([
             MessageToast.show("Hello World");
          },
 
-         onInit() {
-            // set data model on view
-            const oData = {
-               recipient : {
-                  name : ""
-               }
-            };
-            const oModel = new JSONModel(oData);
-            this.getView().setModel(oModel);
+      //    onInit() {
+      //       // set data model on view
+      //       const oData = {
+      //          recipient : {
+      //             name : ""
+      //          }
+      //       };
+      //       const oModel = new JSONModel(oData);
+      //       this.getView().setModel(oModel);
 
-        // set i18n model on view
-         const i18nModel = new ResourceModel({
-            bundleName: "ui5.walkthrough.i18n.i18n"
-         });
-         this.getView().setModel(i18nModel, "i18n");
-      },
+      //   // set i18n model on view
+      //    const i18nModel = new ResourceModel({
+      //       bundleName: "ui5.walkthrough.i18n.i18n"
+      //    });
+      //    this.getView().setModel(i18nModel, "i18n");
+      // },
 
       onShowHello() {
          // read msg from i18n model
