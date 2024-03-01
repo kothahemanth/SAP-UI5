@@ -16,6 +16,10 @@ sap.ui.define([
 			});
 			this.getView().setModel(oViewModel, "view");
 		},
+		onPress() {
+			const oRouter = this.getOwnerComponent().getRouter();
+			oRouter.navTo("detail");
+		},
 
 		onFilterInvoices(oEvent) {
 			// build filter array
