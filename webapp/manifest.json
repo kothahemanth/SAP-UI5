@@ -34,16 +34,16 @@
 		}
 	},
 	"sap.ui5": {
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
 		"dependencies": {
 			"minUI5Version": "1.108.0",
 			"libs": {
 				"sap.m": {},
 				"sap.ui.core": {}
 			}
-		},
-		"contentDensities": {
-		  "compact": true,
-		  "cozy": true
 		},
 		"models": {
 			"i18n": {
