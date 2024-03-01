@@ -22,13 +22,6 @@ sap.ui.define([
 			};
 			const oModel = new JSONModel(oData);
 			this.setModel(oModel);
-
-			// Show an alert, if service is not reachable (see step 25 for details)
-			this.getModel("invoice").attachEventOnce("metadataFailed", function (oEvent) {
-				/*eslint-disable no-alert */
-				alert("Request to the OData remote service failed.\nDownload the sample to your local machine and read the Walkthrough Tutorial Step 25 to see any data here.");
-				/*eslint-enable no-alert */
-			});
 		}
 	});
 });
