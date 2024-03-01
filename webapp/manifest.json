@@ -41,6 +41,10 @@
 				"sap.ui.core": {}
 			}
 		},
+		"contentDensities": {
+		  "compact": true,
+		  "cozy": true
+		},
 		"models": {
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
