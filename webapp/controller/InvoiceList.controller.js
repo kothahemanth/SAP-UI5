@@ -16,10 +16,6 @@ sap.ui.define([
 			});
 			this.getView().setModel(oViewModel, "view");
 		},
-		onPress() {
-			const oRouter = this.getOwnerComponent().getRouter();
-			oRouter.navTo("detail");
-		},
 
 		onFilterInvoices(oEvent) {
 			// build filter array
@@ -33,6 +29,14 @@ sap.ui.define([
 			const oList = this.byId("invoiceList");
 			const oBinding = oList.getBinding("items");
 			oBinding.filter(aFilter);
+		},
+
+		onPress(oEvent) {
+			const oItem = oEvent.getSource();
+			const oRouter = this.getOwnerComponent().getRouter();
+			oRouter.navTo("detail", {
+				invoicePath: window.encodeURIComponent(oItem.getBindingContext("invoice").getPath().substr(1))
+			});
 		}
 	});
 });
